@@ -1,17 +1,24 @@
-const accordionHeaders = document.querySelectorAll(".accordion-header");
+const headers = document.querySelectorAll(".accordion-header");
 
-accordionHeaders.forEach(header => {
+headers.forEach(header => {
   header.addEventListener("click", () => {
     const item = header.parentElement;
+    const video = item.querySelector("video");
 
-    // Cerrar los demás
     document.querySelectorAll(".accordion-item").forEach(other => {
       if (other !== item) {
         other.classList.remove("active");
+        const v = other.querySelector("video");
+        if (v) v.pause();
       }
     });
 
-    // Abrir / cerrar el actual
     item.classList.toggle("active");
+
+    if (item.classList.contains("active") && video) {
+      video.play();
+    } else if (video) {
+      video.pause();
+    }
   });
 });
