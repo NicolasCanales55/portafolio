@@ -133,6 +133,10 @@ footer {
   section {
     margin: 40px auto;
   }
+
+  .project-image {
+    max-height: 260px;
+  }
 }
 
 /* Celular */
@@ -160,4 +164,113 @@ footer {
   .card-footer {
     padding: 14px 18px;
   }
+
+  .project-image {
+    max-height: 200px;
+  }
+}
+/* Accordion */
+.accordion {
+  max-width: 900px;
+  margin: auto;
+}
+
+.accordion-item {
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* Header */
+.accordion-header {
+  width: 100%;
+  background: #222;
+  color: white;
+  padding: 18px 22px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.accordion-header:hover {
+  background: #333;
+}
+
+/* Icon */
+.accordion-header .icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+/* Contenido */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 22px;
+  background: #fafafa;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+}
+
+.accordion-content p {
+  margin: 15px 0;
+}
+
+.accordion-content ul {
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.accordion-content a {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.accordion-content a:hover {
+  text-decoration: underline;
+}
+
+/* Activo */
+.accordion-item.active .accordion-content {
+  max-height: 500px;
+  padding: 15px 22px;
+}
+
+.accordion-item.active .icon {
+  transform: rotate(45deg);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 15px 0;
+  display: block;
+}
+
+
+/* Links */
+.project-links {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.project-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0066cc;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
 }

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Portafolio - Nicolás Canales</title>
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
@@ -14,7 +15,7 @@
 
   <section>
   <h2>Sobre mí</h2>
-  <p>
+  <p style="text-align: center;">
     Desarrollo proyectos usando C# y Unity, con experiencia en bases de datos, aplicaciones de escritorio, web y mobile.
   </p>
 
@@ -28,39 +29,41 @@
   </ul>
 </section>
 
-
-  <section class="projects">
+<section class="projects">
   <h2>Proyectos</h2>
 
-  <div class="projects-grid">
+  <div class="accordion">
 
-    <div class="card">
-      <div class="card-body">
-        <h3>Videojuego 3D en Unity</h3>
-        <p>Juego desarrollado en C# utilizando Unity, con mecánicas 3D.</p>
-      </div>
-      <div class="card-footer">
-        <a href="#" target="_blank">Ver proyecto</a>
-      </div>
-    </div>
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>🎮 Videojuego 3D en Unity</span>
+        <span class="icon">+</span>
+      </button>
 
-    <div class="card">
-      <div class="card-body">
-        <h3>Veterinaria Web</h3>
-        <p>Página web informativa y administrativa para una veterinaria.</p>
-      </div>
-      <div class="card-footer">
-        <a href="#" target="_blank">Ver proyecto</a>
-      </div>
-    </div>
+      <div class="accordion-content">
 
-    <div class="card">
-      <div class="card-body">
-        <h3>Ferretería Web</h3>
-        <p>Sitio web para gestión y visualización de productos de ferretería.</p>
-      </div>
-      <div class="card-footer">
-        <a href="#" target="_blank">Ver proyecto</a>
+        <!-- IMAGEN DEL PROYECTO -->
+        <img 
+          src="assets/Spinosaurus.jpg" 
+          alt="Videojuego 3D en Unity"
+          class="project-image"
+        >
+
+        <p>
+          Juego desarrollado en Unity utilizando C#. Incluye mecánicas 3D,
+          control de personaje y físicas básicas.
+        </p>
+
+        <ul>
+          <li><strong>Tecnologías:</strong> Unity, C#</li>
+          <li><strong>Tipo:</strong> Proyecto académico</li>
+        </ul>
+
+        <div class="project-links">
+          <a href="https://github.com/NicolasCanales55" target="_blank">GitHub</a>
+          <a href="#" target="_blank">Demo</a>
+        </div>
+
       </div>
     </div>
 
@@ -68,9 +71,10 @@
 </section>
 
 
+
   <footer>
     <p>Contacto: nicolas.canales.m.nc@gmail.com</p>
   </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
