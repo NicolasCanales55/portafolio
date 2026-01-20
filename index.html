@@ -11,12 +11,20 @@
   <header>
     <h1>Nicolás Canales</h1>
     <p>Titulado de Ingeniería en Informática en Duoc UC.</p>
+    <button id="lang-toggle" class="lang-btn">EN</button>
+
   </header>
 
   <section>
-  <h2>Sobre mí</h2>
-  <p style="text-align: center;">
-    Desarrollo proyectos usando C# y Unity, con experiencia en bases de datos, aplicaciones de escritorio, web y mobile.
+  <h2 data-es="Sobre mí" data-en="About me">Sobre mí</h2>
+  <p style="text-align: center;"
+    data-es="Desarrollo proyectos usando C# y Unity, también cuento con experiencia desarrollando 
+    aplicaciones de escritorio, web y mobile utilizando varias bases de datos."
+    data-en="I develop projects using C# and Unity, I have experience developing desktop, 
+    web and mobile applications using a variety of databases."
+  >
+    Desarrollo proyectos usando C# y Unity, también cuento con experiencia desarrollando 
+    aplicaciones de escritorio, web y mobile utilizando varias bases de datos.
   </p>
 
   <h3 style="text-align: center; margin: 10px;">Tecnologías</h3>
@@ -36,44 +44,13 @@
 
     <div class="accordion-item">
       <button class="accordion-header">
-        <span>🎮 q es esto</span>
-        <span class="icon">+</span>
-      </button>
-
-      <div class="accordion-content">
-
-        <!-- IMAGEN DEL PROYECTO -->
-        <img
-          src="assets/Spinosaurus.jpg" 
-          alt="Videojuego 3D en Unity"
-          class="project-image"
-        >
-
-        <p>
-          contexto
-        </p>
-
-        <ul>
-          <li><strong>Tecnologías:</strong> Unity, C#</li>
-          <li><strong>Tipo:</strong> Proyecto académico</li>
-        </ul>
-
-        <div class="project-links">
-          <a href="https://github.com/NicolasCanales55" target="_blank">GitHub</a>
-          <a href="#" target="_blank">Demo</a>
-        </div>
-
-      </div>
-    </div>
-    <div class="accordion-item">
-      <button class="accordion-header">
         <span>🎮 Videojuego 3D en Unity</span>
         <span class="icon">+</span>
       </button>
 
       <div class="accordion-content">
 
-        <!-- IMAGEN DEL PROYECTO -->
+        <!-- Imagen del proyecto -->
         <video
           class="project-video"
           src="assets/Gameplay.mp4"
@@ -83,9 +60,15 @@
           playsinline
         ></video>
 
-        <p>
-          Videojuego sin nombre desarrollado en Unity utilizando C#. Incluye mecánicas de combate, movimiento, salud y progreso de personaje.
-          Ninguno de los assets, ni animaciones corresponde a mí, exceptuando el modelado y animación de la espada.
+        <!-- Descripción del proyecto -->
+        <p
+          data-es="Mi primer videojuego sin nombre desarrollado en Unity utilizando C#. Incluye mecánicas de combate, movimiento, salud y progreso de personaje.
+          Ninguno de los assets corresponde a mí, exceptuando la espada."
+          data-en="My first videogame without a name made in Unity using C#. It includes combat mechanics, movement, health and character progress.
+          None of the assets used are of my property, except for the sword."
+        >
+          Mi primer videojuego sin nombre desarrollado en Unity utilizando C#. Incluye mecánicas de combate, movimiento, salud y progreso de personaje.
+          Ninguno de los assets, ni animaciones corresponde a mí, exceptuando el modelado y movimiento de la espada.
         </p>
 
         <ul>
@@ -95,7 +78,6 @@
 
         <div class="project-links">
           <a href="https://github.com/NicolasCanales55" target="_blank">GitHub</a>
-          <a href="#" target="_blank">Demo</a>
         </div>
 
       </div>
@@ -104,10 +86,8 @@
   </div>
 </section>
 
-
-
   <footer>
-    <p>Contacto: nicolas.canales.m.nc@gmail.com</p>
+    <p><strong>Email</strong>: nicolas.canales.m.nc@gmail.com <strong>Celular</strong>+56 9 4524 9376</p>
   </footer>
   <script src="script.js"></script>
 </body>

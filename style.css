@@ -9,6 +9,10 @@ body {
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
+
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -247,7 +251,7 @@ footer {
 
 /* Activo */
 .accordion-item.active .accordion-content {
-  max-height: 500px;
+  max-height: 800px;
   padding: 15px 22px;
 }
 
@@ -264,7 +268,6 @@ footer {
   margin: 15px 0;
   display: block;
 }
-
 
 /* Links */
 .project-links {
@@ -286,10 +289,29 @@ footer {
 .project-video {
   width: 100%;
   height: auto;
-  max-height: 320px;
+  max-height: 520px;
   object-fit: cover;
   border-radius: 10px;
   margin: 15px 0;
   display: block;
   background-color: #000;
 }
+
+/* Botón traducción */
+.lang-btn {
+  margin-top: 20px;
+  padding: 8px 18px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+  background: white;
+  color: #222;
+}
+

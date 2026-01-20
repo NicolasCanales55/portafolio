@@ -1,3 +1,4 @@
+// Accordion
 const headers = document.querySelectorAll(".accordion-header");
 
 headers.forEach(header => {
@@ -20,5 +21,19 @@ headers.forEach(header => {
     } else if (video) {
       video.pause();
     }
+  });
+});
+
+
+// Traducción
+const btn = document.getElementById("lang-toggle");
+let currentLang = "es";
+
+btn.addEventListener("click", () => {
+  currentLang = currentLang === "es" ? "en" : "es";
+  btn.textContent = currentLang === "es" ? "EN" : "ES";
+
+  document.querySelectorAll("[data-es]").forEach(el => {
+    el.textContent = el.dataset[currentLang];
   });
 });
